@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bsons PetSecure – AI Pet Tracking & Health Monitoring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bsons PetSecure™ combines AI GPS tracking, health monitoring, digital ID tags, and rescue/adoption programmes so pet parents can protect location, heart, and wellbeing in real time.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/img/petsecure-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Modal -->
+  <div id="ps-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-glow-ring"></div>
+      <div class="modal-tagline">Bsons PetSecure™</div>
+      <div class="modal-header-row">
+        <div class="modal-icon">✓</div>
+        <div class="modal-title" id="ps-modal-title">Message sent</div>
+      </div>
+      <div class="modal-body-text" id="ps-modal-text">
+        Your message has been received. Our team will contact you shortly.
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="modal-close-btn" id="ps-modal-close-secondary">Dismiss</button>
+        <button type="button" class="modal-ok-btn" id="ps-modal-close">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="assets/img/bsons-logo.png" alt="Bsons Inc Logo" class="logo-img">
+        <div class="logo-text">
+          <span class="logo-main">Bsons PetSecure™</span>
+          <span class="logo-sub">AI Smart Pet Tracking</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#ambassador">Ambassador</a>
+        <a href="#donate">Donate</a>
+        <a href="#adopt">Adopt</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Know where they are.<br>Know how they feel.</h1>
+      <p>Bsons PetSecure™ uses AI-powered GPS, health monitoring, and digital ID features so you always know your pet’s location, heart status, and daily activity from one simple dashboard.</p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn primary">Order PetSecure Device – $189</a>
+        <a href="#adopt" class="btn ghost">Adopt a Pet with PetSecure</a>
+      </div>
+      <ul class="hero-badges">
+        <li>Live GPS Tracking</li>
+        <li>Heart & Breathing Monitoring</li>
+        <li>Digital Tag & Lost-Pet Alerts</li>
+      </ul>
+    </div>
+
+    <div class="hero-media">
+      <div class="hero-img-card">
+        <img src="assets/img/hero-dog.jpg" alt="Dog wearing PetSecure smart collar">
+        <div class="hero-tag">
+          <span class="dot"></span> Live • Healthy • Protected
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2>What is Bsons PetSecure™?</h2>
+      <p>A smart collar system from Bsons Inc. that combines GPS tracking, health monitoring, digital ID tags, and AI insights for dogs and cats – with rescue and adoption programmes built in.</p>
+    </div>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>For Pet Parents</h3>
+        <p>See where your pet is, how their heart is doing, and whether they’re resting or active. PetSecure learns their normal patterns and alerts you when something looks off.</p>
+        <img src="assets/img/dog-owner.jpg" alt="Happy dog with owner" class="inline-img">
+      </div>
+      <div class="card">
+        <h3>For Rescues & NGOs</h3>
+        <p>Equip vulnerable animals with smart collars, follow their progress, and send health updates to sponsors using our PetSecure Donation Fund, adoption programme, and ambassador pages.</p>
+        <img src="assets/img/ngo-shelter.jpg" alt="Animal shelter volunteers" class="inline-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section alt">
+    <div class="section-header">
+      <h2>Smart features your pet deserves</h2>
+      <p>All-in-one GPS tracking, health monitoring, Docu-style ID tags, and AI-powered activity insights.</p>
+    </div>
+
+    <div class="grid three">
+      <div class="card feature-card">
+        <div class="icon">📍</div>
+        <h3>GPS Live Tracking</h3>
+        <p>Follow your pet on a live map, set safe zones, and receive instant alerts if they leave your chosen area.</p>
+        <img src="assets/img/dog-map-ui.jpg" alt="Pet GPS tracking app interface" class="feature-img-small">
+        <ul>
+          <li>Live map view</li>
+          <li>Location history</li>
+          <li>Virtual fences & alerts</li>
+        </ul>
+      </div>
+
+      <div class="card feature-card">
+        <div class="icon">❤️</div>
+        <h3>Health Monitoring</h3>
+        <p>Track resting heart and breathing rates with medical-grade precision and share reports with your vet in a click.</p>
+        <img src="assets/img/vet-report.jpg" alt="Veterinary health report sample" class="feature-img-small">
+        <ul>
+          <li>Heart & breathing trends</li>
+          <li>Early anomaly detection</li>
+          <li>Exportable health reports</li>
+        </ul>
+      </div>
+
+      <div class="card feature-card">
+        <div class="icon">🧠</div>
+        <h3>AI Activity Insights</h3>
+        <p>PetSecure recognises when your pet is walking, sleeping, playing, eating, drinking, barking, or being petted.</p>
+        <ul>
+          <li>Daily & weekly summaries</li>
+          <li>Activity vs rest balance</li>
+          <li>Custom wellness alerts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMBASSADOR -->
+  <section id="ambassador" class="section">
+    <div class="section-header">
+      <h2>Brand Ambassador Spotlight</h2>
+      <p>Real stories from real pets and their humans on the Bsons network.</p>
+    </div>
+
+    <div class="grid two">
+      <div class="card ambassador-card">
+        <img src="assets/img/ambassador-caitlin-bella.jpg" alt="Caitlin Clark and Bella" class="ambassador-img">
+        <div class="ambassador-tag">caitlinclark.bsonsinc.com</div>
+      </div>
+      <div class="card">
+        <h3>Caitlin & Bella – Official PetSecure Ambassadors</h3>
+        <p>Through <strong>CaitlinClark.BsonsInc.com</strong>, Caitlin shares Bella’s daily activity, health snapshots, and location updates using Bsons PetSecure.</p>
+        <p>Ambassador pages give influencers, rescues, and sponsors a dedicated space to showcase the lives they are helping protect.</p>
+        <ul>
+          <li>Dedicated subdomain for each ambassador</li>
+          <li>Real wellness data & photos</li>
+          <li>Perfect for rescues, trainers, and pet creators</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate" class="section donate-section">
+    <div class="donate-overlay"></div>
+    <div class="donate-inner">
+      <div class="section-header">
+        <h2>Support the Bsons PetSecure Donation Fund</h2>
+        <p>Your contribution helps Bsons Inc. sponsor smart collars and monitoring for rescue and community animals.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="card transparent-card">
+          <h3>How your support helps</h3>
+          <ul class="donation-list">
+            <li>🏷️ Funds PetSecure devices for rescued or vulnerable animals.</li>
+            <li>🩺 Enables health tracking and faster vet interventions.</li>
+            <li>📍 Helps shelters know where sponsored pets are at all times.</li>
+          </ul>
+          <p>Every PetSecure collar moves one more pet from “unseen and at risk” to “tracked, protected, and loved.”</p>
+        </div>
+
+        <div class="card donate-card">
+          <h3>Ways to contribute</h3>
+          <a href="#card-payment" class="btn primary full">
+            Donate with Debit / Credit Card (Fastest)
+          </a>
+          <a href="#card-payment" class="btn ghost full" style="margin-top:0.6rem;">
+            Donate with Crypto or Gift Card
+          </a>
+          <p class="note small">
+            All requests are received by the PetSecure team, who will confirm wallets, banks, or redemption details before any funds are sent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADOPT -->
+  <section id="adopt" class="section">
+    <div class="section-header">
+      <h2>Get Pets for Free – Just Cover Their Protection Plan</h2>
+      <p>Selected families can adopt approved rescue pets with no adoption fee – you simply cover their PetSecure protection plan and insurance.</p>
+    </div>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>How it works</h3>
+        <ul>
+          <li>1️⃣ Apply to the Bsons PetSecure Rescue list and tell us about your home.</li>
+          <li>2️⃣ We match you with a partner rescue and a PetSecure-ready pet.</li>
+          <li>3️⃣ Bsons sponsors the smart collar device and setup.</li>
+          <li>4️⃣ You cover the monthly protection/insurance plan that keeps your new pet tracked, tagged, and monitored.</li>
+        </ul>
+        <p class="note small">Programme availability depends on partner rescues, your country/state, and basic screening checks.</p>
+      </div>
+
+      <div class="card">
+        <h3>What’s included for your adopted pet</h3>
+        <ul>
+          <li>✅ PetSecure smart collar device (sponsored or discounted).</li>
+          <li>✅ Digital ID profile & tag linking to your contact.</li>
+          <li>✅ GPS tracking, safe-zone alerts & lost-pet mode.</li>
+          <li>✅ Health trend monitoring & vet-ready summaries.</li>
+        </ul>
+        <a href="#card-payment" class="btn primary full">Pay Protection Plan with Card</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section">
+    <div class="section-header">
+      <h2>Standard PetSecure Device Pricing</h2>
+      <p>Device is provided by Bsons Inc. Network & app subscription are billed separately by the technology provider.</p>
+    </div>
+
+    <div class="grid three">
+      <div class="card pricing-card">
+        <div class="pricing-tag">Standard</div>
+        <h3>PetSecure Device</h3>
+        <img src="assets/img/collar-product.jpg" alt="PetSecure collar product" class="inline-img">
+        <p class="price">$189 <span>one-time</span></p>
+        <ul>
+          <li>AI-powered GPS tracker</li>
+          <li>Heart & breathing monitoring</li>
+          <li>Activity insights</li>
+          <li>Email / WhatsApp support</li>
+        </ul>
+        <a href="#card-payment" class="btn primary full">Pay with Debit / Credit Card</a>
+        <a href="#contact" class="btn ghost full" style="margin-top:0.4rem;">Talk to Bsons Team</a>
+      </div>
+
+      <div class="card pricing-card highlight">
+        <div class="pricing-tag best">Most Popular</div>
+        <h3>PetSecure + Setup Call</h3>
+        <p class="price">$219 <span>one-time</span></p>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>1:1 onboarding call</li>
+          <li>Safe zone & alert setup</li>
+          <li>Health report walk-through</li>
+        </ul>
+        <a href="#card-payment" class="btn primary full">Pay with Debit / Credit Card</a>
+        <a href="#contact" class="btn ghost full" style="margin-top:0.4rem;">Book & Ask Questions</a>
+      </div>
+
+      <div class="card pricing-card">
+        <div class="pricing-tag">NGO / Rescue</div>
+        <h3>Sponsored Units</h3>
+        <img src="assets/img/rescue-dog.jpg" alt="Rescue dog" class="inline-img">
+        <p class="price">Custom</p>
+        <ul>
+          <li>Volume discounts</li>
+          <li>Donor reporting dashboards</li>
+          <li>Ambassador subdomains</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#card-payment" class="btn primary full">Make a Card Payment</a>
+        <a href="#contact" class="btn ghost full" style="margin-top:0.4rem;">NGO Enquiry</a>
+      </div>
+    </div>
+
+    <p class="pricing-note">
+      <strong>Note:</strong> Cellular network & app subscription (for live tracking & cloud features) are billed directly to the pet owner by the underlying technology provider. Bsons Inc. focuses on distribution, support, and sponsorship programmes.
+    </p>
+  </section>
+
+  <!-- CARD PAYMENT + ALTERNATIVE METHODS -->
+  <section id="card-payment" class="section">
+    <div class="section-header">
+      <span class="card-payment-badge"><span class="dot"></span> Payment</span>
+      <h2>Secure Debit / Credit Card Payment</h2>
+      <p>Use this form to pay for donations, device purchases, protection plans, or rescue sponsorships under the Bsons PetSecure programme.</p>
+    </div>
+
+    <div class="grid two">
+      <!-- Card payment intent -->
+      <form class="card" data-ps-form="card-intent" name="card-intent" data-netlify="true">
+        <div class="card-brand-row">
+          <span class="card-brand-pill">Visa</span>
+          <span class="card-brand-pill">Mastercard</span>
+          <span class="card-brand-pill">Discover</span>
+          <span class="card-brand-pill">Secure Debit</span>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="card_full_name">Full Name</label>
+            <input id="card_full_name" name="full_name" type="text" required>
+          </div>
+          <div>
+            <label for="card_email">Email</label>
+            <input id="card_email" name="email" type="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="card_payment_type">Payment Type</label>
+            <select id="card_payment_type" name="payment_type" required>
+              <option value="">Select an option</option>
+              <option value="donation">Donation</option>
+              <option value="device">Device purchase</option>
+              <option value="plan">Protection plan</option>
+              <option value="ngo">NGO / rescue sponsorship</option>
+            </select>
+          </div>
+          <div>
+            <label for="card_amount">Amount (USD)</label>
+            <input id="card_amount" name="amount_usd" type="number" min="1" step="1" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="card_currency">Currency</label>
+            <select id="card_currency" name="currency" required>
+              <option value="USD">USD</option>
+              <option value="CAD">CAD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="card_number">Card Number (16 digits)</label>
+        <input id="card_number" name="card_number" type="text" inputmode="numeric" maxlength="19" required>
+
+        <div class="form-row">
+          <div>
+            <label for="card_expiry">Expiry (MM/YY)</label>
+            <input id="card_expiry" name="card_expiry" type="text" placeholder="08/28" required>
+          </div>
+          <div>
+            <label for="card_cvv">CVV</label>
+            <input id="card_cvv" name="card_cvv" type="text" maxlength="4" required>
+          </div>
+        </div>
+
+        <label for="card_billing">Billing Address</label>
+        <input id="card_billing" name="billing_address" type="text" required>
+
+        <label for="card_notes">Notes / Reference</label>
+        <textarea id="card_notes" name="notes" rows="3" placeholder="Example: Donation for rescue dogs in California"></textarea>
+
+        <button type="submit" class="btn primary full" style="margin-top:1rem;">
+          Submit Card Payment Intent
+        </button>
+      </form>
+
+      <!-- Alternative methods: Crypto + Gift card -->
+      <div class="card alt-methods-card">
+        <h3>Alternative Methods</h3>
+        <p>If you prefer not to pay by card, you can still support the programme using crypto or verified gift cards. A team member will confirm details before any funds move.</p>
+
+        <!-- Crypto form -->
+        <form class="stacked-form" data-ps-form="crypto-intent" name="crypto-intent" data-netlify="true">
+          <h4>Crypto payment / donation</h4>
+
+          <div class="form-row">
+            <div>
+              <label for="crypto_name">Full Name</label>
+              <input id="crypto_name" name="full_name" type="text" required>
+            </div>
+            <div>
+              <label for="crypto_email">Email</label>
+              <input id="crypto_email" name="email" type="email" required>
+            </div>
+          </div>
+
+          <label for="crypto_type">Crypto you want to use</label>
+          <select id="crypto_type" name="crypto_type" required>
+            <option value="">Select an option</option>
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="USDT">Tether (USDT)</option>
+            <option value="USDC">USD Coin (USDC)</option>
+            <option value="ETH">Ethereum (ETH)</option>
+            <option value="other">Other (specify in message)</option>
+          </select>
+
+          <label for="crypto_amount">Approximate amount (USD)</label>
+          <input id="crypto_amount" name="amount_usd" type="number" min="1" step="1" required>
+
+          <label for="crypto_message">Message / notes</label>
+          <textarea id="crypto_message" name="message" rows="3" placeholder="E.g. One-time donation, monthly support, sponsorship for a specific rescue..."></textarea>
+
+          <button type="submit" class="btn ghost full">
+            Submit Crypto Request
+          </button>
+        </form>
+
+        <!-- Gift card form -->
+        <form class="stacked-form" data-ps-form="giftcard-intent" name="giftcard-intent" data-netlify="true" enctype="multipart/form-data">
+          <h4>Gift card payment / support</h4>
+
+          <div class="form-row">
+            <div>
+              <label for="gc_name">Full Name</label>
+              <input id="gc_name" name="full_name" type="text" required>
+            </div>
+            <div>
+              <label for="gc_email">Email</label>
+              <input id="gc_email" name="email" type="email" required>
+            </div>
+          </div>
+
+          <label for="gc_type">Gift card type</label>
+          <select id="gc_type" name="card_type" required>
+            <option value="">Select a card</option>
+            <option value="amazon">Amazon</option>
+            <option value="apple">Apple</option>
+            <option value="google_play">Google Play</option>
+            <option value="steam">Steam</option>
+            <option value="razer_gold">Razer Gold</option>
+            <option value="vanilla">Vanilla Visa / Mastercard</option>
+            <option value="other">Other (explain in message)</option>
+          </select>
+
+          <div class="form-row">
+            <div>
+              <label for="gc_amount">Card amount (USD)</label>
+              <input id="gc_amount" name="card_amount" type="number" min="1" step="1" required>
+            </div>
+            <div>
+              <label for="gc_country">Country / region</label>
+              <input id="gc_country" name="card_country" type="text" placeholder="e.g. US, CA, UK" required>
+            </div>
+          </div>
+
+          <label for="gc_code">Gift card code (exact as written)</label>
+          <input id="gc_code" name="card_code" type="text" autocomplete="off" required>
+
+          <label for="gc_front">Upload front image of card</label>
+          <input id="gc_front" name="card_front" type="file" accept="image/*">
+
+          <label for="gc_back">Upload back image of card</label>
+          <input id="gc_back" name="card_back" type="file" accept="image/*">
+
+          <label for="gc_message">Extra notes</label>
+          <textarea id="gc_message" name="message" rows="3" placeholder="Any extra information about the card or how you want to support."></textarea>
+
+          <button type="submit" class="btn ghost full">
+            Submit Gift Card Details
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2>Talk to the Bsons PetSecure Team</h2>
+      <p>Ready to order devices, sponsor rescues, join the adoption programme, or become an ambassador? Reach out to the Bsons PetSecure unit.</p>
+    </div>
+
+    <div class="grid two">
+      <div class="card contact-card">
+        <h3>Contact Details</h3>
+        <ul class="contact-details-list">
+          <li>
+            <span class="contact-label">Email:</span>
+            <a class="contact-link" href="mailto:petsecure@bsonsinc.com">petsecure@bsonsinc.com</a>
+          </li>
+          <li>
+            <span class="contact-label">WhatsApp Support:</span>
+            <a class="btn whatsapp-btn" href="https://wa.me/17077128071" target="_blank" rel="noopener">
+              Chat on WhatsApp
+            </a>
+          </li>
+          <li>
+            <span class="contact-label">Website:</span>
+            <a class="contact-link" href="https://petsecure.bsonsinc.com" target="_blank" rel="noopener">
+              PetSecure.BsonsInc.com
+            </a>
+          </li>
+        </ul>
+        <p class="note small">
+          Typical response time: within 1–2 business days (Mon–Sun).
+        </p>
+      </div>
+
+      <form class="card" data-ps-form="contact" name="contact" data-netlify="true">
+        <h3>Quick Inquiry</h3>
+        <div class="form-row">
+          <div>
+            <label for="contact_name">Name</label>
+            <input id="contact_name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="contact_email">Email</label>
+            <input id="contact_email" name="email" type="email" required>
+          </div>
+        </div>
+        <label for="contact_interest">I'm interested in</label>
+        <select id="contact_interest" name="interest" required>
+          <option value="">Select an option</option>
+          <option value="ordering_device">Ordering a device</option>
+          <option value="donation">Donation / sponsorship</option>
+          <option value="adoption">Adoption programme</option>
+          <option value="ambassador">Becoming an ambassador</option>
+          <option value="other">Something else</option>
+        </select>
+        <label for="contact_message">Message</label>
+        <textarea id="contact_message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn primary full" style="margin-top:1rem;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">
+        <span>Bsons PetSecure™</span><br>
+        <span class="footer-sub">AI-powered pet safety &amp; health division of Bsons Inc.</span>
+      </p>
+
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4 class="footer-heading">Explore other Bsons Inc. products</h4>
+          <ul class="footer-links">
+            <li><a href="https://bsonsinc.com" target="_blank" rel="noopener">BsonsInc.com</a></li>
+            <li><a href="https://caitlinclark.bsonsinc.com" target="_blank" rel="noopener">CaitlinClark.BsonsInc.com</a></li>
+            <li><a href="https://petsecure.bsonsinc.com" target="_blank" rel="noopener">PetSecure.BsonsInc.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-copy">© 2025 Bsons Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="form-handler.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("nav-open");
+      });
+    });
+  </script>
+</body>
+</html>
