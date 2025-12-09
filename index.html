@@ -258,7 +258,7 @@
           <li>AI-powered GPS tracker</li>
           <li>Heart & breathing monitoring</li>
           <li>Activity insights</li>
-          <li>Email <li>Email <li>Email / WhatsApp support</li>amp; Live chat support</li>amp; Live chat support</li>
+          <li>Email <li>Email <li>Email <li>Email / WhatsApp support</li>amp; Live chat support</li>amp; Live chat support</li>amp; Live chat support</li>
         </ul>
         <a href="#card-payment" class="btn primary full">Pay with Debit / Credit Card</a>
         <a href="#contact" class="btn ghost full" style="margin-top:0.4rem;">Talk to Bsons Team</a>
@@ -597,6 +597,16 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
+  <button id="petsecure-chat-float" style="position:fixed;bottom:16px;right:16px;border:none;border-radius:999px;padding:12px 18px;background:linear-gradient(90deg,#22c55e,#16a34a);color:#ffffff;font-weight:600;font-size:14px;box-shadow:0 10px 25px rgba(0,0,0,0.25);z-index:9999;cursor:pointer;">Chat with PetSecure</button>
+  <script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var btn = document.getElementById("petsecure-chat-float");
+    if (!btn) return;
+    btn.addEventListener("click", function(){
+      if (window.Tawk_API && Tawk_API.maximize) { Tawk_API.maximize(); }
+    });
+  });
+  </script>
   <button id="petsecure-chat-float" style="position:fixed;bottom:16px;right:16px;border:none;border-radius:999px;padding:12px 18px;background:linear-gradient(90deg,#22c55e,#16a34a);color:#ffffff;font-weight:600;font-size:14px;box-shadow:0 10px 25px rgba(0,0,0,0.25);z-index:9999;cursor:pointer;">Chat with PetSecure</button>
   <script>
   document.addEventListener("DOMContentLoaded", function(){
